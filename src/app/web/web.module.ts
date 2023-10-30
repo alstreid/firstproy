@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NoPagesFoundComponent } from './no-pages-found/no-pages-found.component';
 
 
 
@@ -10,7 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   declarations: [
     CategoryComponent,
     ProductComponent,
-    DashboardComponent
+    DashboardComponent,
+    NoPagesFoundComponent
   ],
   imports: [
     CommonModule
