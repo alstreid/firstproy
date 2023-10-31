@@ -11,9 +11,9 @@ import { NoPagesFoundComponent } from './no-pages-found/no-pages-found.component
 
 const routes: Routes = [
   {
-    path: 'dashboard', component: WebComponent,
+    path: 'dashboard', component: DashboardComponent,
     children: [
-      { path: '', component: DashboardComponent },
+      // { path: '', component: DashboardComponent },
       { path: 'product', component: ProductComponent },
       { path: 'category', component: CategoryComponent },
       
