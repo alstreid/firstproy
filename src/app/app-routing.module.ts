@@ -21,8 +21,8 @@ const routes: Routes = [
   // declarations: [],
   imports: [
     RouterModule.forRoot(routes),
-    WebRoutingModule,
     AuthRoutingModule,
+    WebRoutingModule,
   ],
 
   exports: [RouterModule],
