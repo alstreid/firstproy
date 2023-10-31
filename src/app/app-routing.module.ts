@@ -4,11 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { WebModule } from './web/web.module';
 import { WebRoutingModule } from './web/web-routing.module';
 import { NoPagesFoundComponent } from './web/no-pages-found/no-pages-found.component';
+import { AuthRoutingModule } from './auth/auth-routing.module';
 
 
 const routes: Routes = [
-  { path: '**', component:NoPagesFoundComponent},
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' }, 
+  { path: '**', component: NoPagesFoundComponent},
   // { path: 'dashborad/', component:WebComponent}
   // { path: 'login', component: LoginComponent },
   // { path: 'register', component: RegisterComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [
   // declarations: [],
   imports: [
     RouterModule.forRoot(routes),
-    WebRoutingModule
+    WebRoutingModule,
+    AuthRoutingModule,
   ],
 
   exports: [RouterModule],

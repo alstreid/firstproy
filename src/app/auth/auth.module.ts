@@ -4,7 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 
 import { RegisterComponent } from './register/register.component';
-import { AuthRoutingModule } from './auth-routing.module';
+
 
 
 

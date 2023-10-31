@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NoPagesFoundComponent } from './no-pages-found/no-pages-found.component';
 
 import { SharedModule } from '../shared/shared.module';
 
 import { WebComponent } from './web.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule } from '@angular/router';
+import { WebRoutingModule } from './web-routing.module';
 
 
 
@@ -17,19 +19,22 @@ import { RouterModule } from '@angular/router';
     CategoryComponent,
     ProductComponent,
     DashboardComponent,
+    NoPagesFoundComponent,
     WebComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     AppRoutingModule,
-    RouterModule
+    WebRoutingModule,
+    // RouterModule
 
   ],
   exports: [
-    CategoryComponent,
     ProductComponent,
+    CategoryComponent,
     DashboardComponent,
+    NoPagesFoundComponent,
     WebComponent
   ]
 })
