@@ -3,7 +3,7 @@ import { RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { Routes } from '@angular/router';
-import { AppRoutingModule } from '../app-routing.module';
+
 
 const routes: Routes = [
   
@@ -16,8 +16,10 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    AppRoutingModule,
+    RouterModule.forChild(routes),
     RouterModule,
-  ]
+  ],
+  exports: [RouterModule]
+  
 })
 export class AuthRoutingModule { }
