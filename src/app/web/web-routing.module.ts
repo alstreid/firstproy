@@ -6,15 +6,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductComponent } from './product/product.component';
 import { CategoryComponent } from './category/category.component';
 import { AppRoutingModule } from '../app-routing.module';
+import { NoPagesFoundComponent } from './no-pages-found/no-pages-found.component';
 
 
 const routes: Routes = [
   {
-    path: 'dashboard/', component: WebComponent,
+    path: 'dashboard', component: WebComponent,
     children: [
       { path: '', component: DashboardComponent },
       { path: 'product', component: ProductComponent },
-      { path: 'category', component: CategoryComponent }
+      { path: 'category', component: CategoryComponent },
+      
     ]
   }
 ]
@@ -23,7 +25,6 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    AppRoutingModule,
     RouterModule.forChild(routes)
   ]
 })
