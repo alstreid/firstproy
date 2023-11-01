@@ -17,8 +17,8 @@ export class ProductComponent implements OnInit {
   }
 
   getProducts(){
-    const response = this.httpclient.get("https://api.escuelajs.co/api/v1/products").subscribe( (result) =>  {
-    console.log(result)})
-
+    this.httpclient.get("https://api.escuelajs.co/api/v1/products").subscribe(resp => {
+    console.log(resp);
+  });
   }
 }
